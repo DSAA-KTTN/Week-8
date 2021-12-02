@@ -183,13 +183,11 @@ int main(){
 
     addEdge(g, 0, 1);
     addEdge(g, 1, 2);
-    //addEdge(g, 2, 0);
+    addEdge(g, 2, 0);
     addEdge(g, 1, 3);
-    //addEdge(g,3,0);
-
+    
     if (DAG(g)) printf("The graph is acycle\n");
     else printf("Have cycles in the graph\n");
-
 
   dropGraph(g);
   
